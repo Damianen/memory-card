@@ -17,20 +17,20 @@ function App() {
 
   return (
     <>
-      <h1>Pokemon Memory Game</h1>
+      <h1>Shiny Pokemon Memory Game</h1>
       <p>Get points by clicking on an image but dont click on any card more than once!</p>
       <p>Score: {score}</p>
       <p>Best score: {bestScore} </p>
       <div className='Cards-container'>
-        <Card handleClick={handleClick}/>
-        <Card handleClick={handleClick}/>
-        <Card handleClick={handleClick}/>
-        <Card handleClick={handleClick}/>
-        <Card handleClick={handleClick}/>
-        <Card handleClick={handleClick}/>
-        <Card handleClick={handleClick}/>
-        <Card handleClick={handleClick}/>
-        <Card handleClick={handleClick}/>
+        <Card handleClick={handleClick} pokemon={"ditto"}/>
+        <Card handleClick={handleClick} pokemon={"eevee"}/>
+        <Card handleClick={handleClick} pokemon={"bulasaur"}/>
+        <Card handleClick={handleClick} pokemon={"charmander"}/>
+        <Card handleClick={handleClick} pokemon={"squirtle"}/>
+        <Card handleClick={handleClick} pokemon={"pikachu"}/>
+        <Card handleClick={handleClick} pokemon={"geodude"}/>
+        <Card handleClick={handleClick} pokemon={"magikarp"}/>
+        <Card handleClick={handleClick} pokemon={"psyduck"}/>
       </div>
     </>
   )

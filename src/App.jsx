@@ -49,7 +49,9 @@ function App() {
 
   const handleClick = (clickedPokemon) => {
     if (clickedPokemon.hasBeenClicked) {
-      setBestScore(score);
+      if (score > bestScore) {
+        setBestScore(score);
+      }
       setScore(0);
     } else {
       setScore(score + 1);
